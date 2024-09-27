@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <style>
+        /* Custom Styles */
+        .skill-card, .project-card {
+            transition: transform 0.3s ease;
+        }
+        .skill-card:hover, .project-card:hover {
+            transform: scale(1.05);
+        }
+        .hero-section {
+            background-image: url('./HP1.webp');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">MAHDI MEJRI</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Projects</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h1 class="text-white text-4xl font-bold text-center">Hi, I'm Mahdi Mejri, a Web Developer.</h1>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-8">My Skills</h3>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="skill-card p-6 bg-white shadow-md rounded-lg">HTML</div>
+                <div class="skill-card p-6 bg-white shadow-md rounded-lg">CSS</div>
+                <div class="skill-card p-6 bg-white shadow-md rounded-lg">JavaScript</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16 bg-gray-200">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">My Projects</h3>
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="./15925654385a8PArotT5.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Project Title 1</h4>
+                        <p class="text-gray-600">Brief description of the project...</p>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="./istockphoto-1193375149-170667a.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Project Title 2</h4>
+                        <p class="text-gray-600">Brief description of the project...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">Contact Me</h3>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Your email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold">Message</label>
+                    <textarea id="message" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded-md">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-400">Twitter</a>
+            <a href="#" class="hover:text-gray-400">LinkedIn</a>
+            <a href="#" class="hover:text-gray-400">GitHub</a>
+        </div>
+        <p class="text-center mt-4">&copy; 2024 Mahdi Mejri. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
